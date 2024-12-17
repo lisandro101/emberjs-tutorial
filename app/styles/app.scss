@@ -1,7 +1,8 @@
+@use "sass:meta";
 body {
   background-color: #F5F5F5;
 }
 
-@import './homepage';
-@import './item';
-@import './cart';
+@include meta.load-css('homepage');
+@include meta.load-css('item');
+@include meta.load-css('cart');
