@@ -4,5 +4,5 @@ body {
 }
 
 @include meta.load-css('homepage');
-@include meta.load-css('item');
+@include meta.load-css('product');
 @include meta.load-css('cart');

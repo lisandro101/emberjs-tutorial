@@ -4,9 +4,9 @@ import { action } from '@ember/object';
 
 export default class ItemController extends Controller {
   @tracked color = this.model.colors[0].color;
+  @tracked isZoomed = false;
 
   get productImage() {
-    console.log(this.color);
     return this.model.colors.find(({ color }) => color === this.color).image;
   }
 
@@ -14,5 +14,11 @@ export default class ItemController extends Controller {
   onChangeColor(newColor) {
     this.color = newColor;
     console.log(this.color);
+  }
+
+  @action
+  toggleZoom() {
+    this.isZoomed = !this.isZoomed;
+    console.log(this.isZoomed);
   }
 }

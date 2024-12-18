@@ -101,6 +101,17 @@
     color: #333;
   }
 
+  &.is-zoomed {
+    .product-image {
+      width: 100%;
+    }
+
+    .product-details {
+      width: 0;
+      padding: 0;
+    }
+  }
+
   &.has-zoomed-image {
     .product-image {
       width: 100%;
